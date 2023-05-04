@@ -1,0 +1,130 @@
+/* body { */
+/*     background-color: #01304F; */
+/*     color: #A1A6AA; */
+/*     font-family: 'Ubuntu Mono', monospace; */
+/*     margin: 0 auto; */
+/*     max-width: 800px; */
+/*     font-size: 116%; */
+/* } */
+
+/* @media only screen and (max-device-width: 480px) { */
+/*     body { */
+/* 	max-width: none; */
+/* 	font-size: small; */
+/*     } */
+/* } */
+
+/* .title { */
+/*     color: #F1F2F3; */
+/*     text-align: center; */
+/*     text-transform: uppercase; */
+/*     font-size: 110%; */
+/*     font-weight: 900; */
+/* } */
+
+/* .org-src-container{ */
+/*     background-color: #002237; */
+/*     color: #FFFFFF; */
+/*     overflow-x: auto; */
+/* } */
+
+/* .src, pre.example { */
+/*     border: none; */
+/*     box-shadow: none; */
+/*     margin-left: 0px; */
+/*     margin-right: 0px; */
+/* } */
+
+/* pre.example, blockquote { */
+/*     background-color: #012842; */
+/* } */
+
+/* blockquote > p { */
+/*     margin: 5px; */
+/* } */
+
+/* pre.src::before { */
+/*     background-color: #002237; */
+/*     border: none; */
+/*     color: #A1A6AA; */
+/* } */
+
+/* pre { */
+/*     background-color: #002237; */
+/*     border: none; */
+/*     color: #A1A6AA; */
+/* } */
+
+/* h1, h2, h3, h4, h5, h6 { */
+/*     color: #CCCFD0; */
+/* } */
+
+/* a { */
+/*     color: #F1F2F3; */
+/*     text-decoration-style: wavy; */
+/* } */
+
+/* a:visited { */
+/*     color: #A1A6AA; */
+/*     text-decoration-style: dashed; */
+/* } */
+
+/* a:active { */
+/*     color: #FFFFFF; */
+/* } */
+
+/* li { */
+/*     margin: 0 0 3px 0; */
+/* } */
+
+/* .figure > p > img { */
+/* 	width: 60%; */
+/* } */
+
+:root {
+    --bgCol : #fff;
+    --hLigh : #543;
+    --dark : #543;
+    --dim  : #ccc;
+    --nemph : #838383;
+    --link : #084999;
+    --orange: #ef8700;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, address, code, del, em, img, strike, strong, b, ul, li, footer {
+    margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline }
+html { line-height: 1.4; color: var(--dark); background-color: var(--bgCol); font-size: 1.1rem }
+body { padding: 25px; margin: auto; max-width: 42em; font-family: Fira Sans,Open Sans,Arial,Helvetica,sans-serif }
+@media only screen and (min-width: 640px) { body { margin: auto } html { padding: .5em } }
+
+
+#about { display:inline-block }
+h1, h2 { font-weight: 800 ; text-align: left; text-shadow: 1px 2px #ddd;}
+table {margin-top: 1em }
+td { padding-top: .1em; padding-right: 2em; width: 12em  }
+h1 { font-size: 2.40rem; margin-top:.5em }
+h2 { font-size: 1.8rem; margin-top: 3em; margin-bottom: .5em }
+ul { margin: .5em 0em } */
+h2 + p {margin-top: .5em }
+p + ul { margin-top: 1.5em }
+.cv-links img { height: .8em}
+ul + ul { margin-top: 1.5em }
+p + p { margin-top: 1.5em }
+
+#table-of-contents ul { list-style: none; margin: .5em 0em } */
+ul.articles li { list-style: disc; margin-bottom: 1em }
+
+b { font-weight: bold }
+
+footer { margin-top: 3em; font-size: 70%; text-align:right }
+.emoji { color: var(--bgCol); display:none }
+.time { margin-top: 1em; color: var(--nemph) }
+.where-pub, .author-pub { font-size: 80%; color: var(--nemph) }
+.author-pub a:link {text-decoration:none;}
+.where-talk { font-size: 80%; padding: 0em .2em; color: var(--nemph) }
+.boxed { margin: 15px -10px; margin-right: -10px; border: 3px solid var(--orange); border-radius: 10px; padding: 7px }
+.ipa { font-size: 1.5rem;  color: var(--dim); font-weight: normal }
+.latexname { font-size: 1.5rem; color: var(--dim); margin-left: 1em; font-weight: normal }
+a:link { text-decoration: underline; color: var(--link); font-weight: bold }
+/* .section-number-2 { margin-left:-2em; margin-right:2em;width:1em;display:inline-block} */
+#postamble { margin-top: 2em; border-top: solid 1px var(--hLigh)}
