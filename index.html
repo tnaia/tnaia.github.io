@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
   <style>
-   :root {
-     --bgCol : #fff;
+    :root {
+     --bgCol : rgba(255,255,255,0.85);
      --hLigh : #543;
      --dark : #543;
-     --dim  : #ccc;
+     --dim  : #9d9d9d;
      --nemph : #838383;
      --link : #084999;
      --orange: #ef8700;
@@ -17,9 +17,17 @@
    html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
    a, address, code, del, em, img, strike, strong, b, ul, li, footer {
      margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline }
-   html { line-height: 1.4; color: var(--dark); background-color: var(--bgCol); font-size: 1.1rem }
-   body { padding: 25px; margin: auto; max-width: 50em; font-family: Fira Sans,Open Sans,Arial,Helvetica,sans-serif }
-   @media only screen and (min-width: 640px) { body { margin: auto } html { padding: .5em } }
+    html { line-height: 1.4; color: var(--dark);  font-size: 1.1rem; }
+   body { padding: 20px; margin: auto; max-width: 44em; font-family: Fira Sans,Open Sans,Arial,Helvetica,sans-serif; background-color: var(--bgCol); }
+   @media only screen and (min-width: 640px) {
+       body { background-size:100%; margin-left:37%; padding-top: 2em; padding-left:2em;padding-right:1em }
+
+       html { padding: 0em; background: url('files/2022-wide-banner-3.png') no-repeat left bottom fixed;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover; }
+   }
 
 
    #about { display:inline-block }
@@ -54,7 +62,10 @@
  </head>
  <body>
 
-  <img style='float:right;height:7em;' src=files/tourn.jpg alt='A 5-vertex tournament, with an unavoidable tree highlighted in it.'>
+   <!-- <img style='float:right;width:120%;' src='files/2022-wide-banner.jpg' alt='Photo of Tássio, with an old computer (blurred) visible on the background.'> -->
+<div id=contents>
+
+  <!-- <img style='float:right;height:7em;' src=files/tourn.jpg alt='A 5-vertex tournament, with an unavoidable tree highlighted in it.'> -->
   <h1>T&aacute;ssio Naia <span class=ipa>['ta.sio&nbsp;'naj.ɐ]</span><span class=latexname>T\'assio</span></h1>
 
   <div id=about>
@@ -67,14 +78,14 @@
    <p>Hello!</p>
 
    <p>I am
-     a <a href='https://www.crm.cat/person/220/naia-tassio'>Mar&iacute;a de Maeztu</a> fellow
+     a <a href='https://www.crm.cat/person/220/naia-tassio'>Mar&iacute;a de Maetzu</a> fellow
      at the <a href='https://www.crm.cat/'>Centre de Recerca Matem&aacute;tica</a>,
      working with <a href='https://web.mat.upc.edu/guillem.perarnau/'>Perarnau, Guillem</a>
      and the <a href='https://gapcomb.upc.edu/en'>GAPCOMB</a>-<a href='https://upc.edu/en'>UPC</a> group.</p>
 
    <p>Previously, I was a postdoc
     at <a href='https://www.labri.fr'>LaBRI</a>-<a href='https://www.u-bordeaux.fr'>U. Bordeaux</a>
-    and <a href='https://www.ime.usp.br/'>IME</a>-<a href='https://www5.usp.br/'>USP</a>,<br>
+    and <a href='https://www.ime.usp.br/'>IME</a>-<a href='https://www5.usp.br/'>USP</a>,
     working
     with <a href='https://www.labri.fr/perso/mbonamy/'>Marthe
     Bonamy</a> and
@@ -83,12 +94,11 @@
 
    <p>
     I received my PhD from the <a href='https://www.birmingham.ac.uk/schools/mathematics/index.aspx'>University
-       of Birmingham</a>, in 2018,<br>
-    where my supervisors were
+       of Birmingham</a>. My supervisors were
     <a href="http://web.mat.bham.ac.uk/~mycroftr/">Richard Mycroft</a>
     and <a href="http://web.mat.bham.ac.uk/D.Osthus/">Deryk Osthus</a>.
 
-    <p>I currently supervise Hugo Vicente (MSc, since 2024, co-supervised by Guilherme Mota).</p>
+   <!-- <p>I currently supervise Hugo Vicente (MSc, since 2024, co-supervised by Guilherme Mota).</p> -->
 
    <p>I am interested in Combinatorics, Probability and Algorithms.</p>
 
@@ -104,7 +114,12 @@
     <li><img src='files/arXiv.svg' alt='arXiv'>
      <a href='https://arxiv.org/a/naia_t_1.html'>arXiv page</a></li>
    </ul>
-  </div>
+
+   <h2><span class=emoji>&#x1F331;</span> Students</h2>
+
+   <ul>
+     <li>Hugo Vicente (MSc Computer Science @ <a href='https://ime.usp.br'>IME-USP</a>, since january 2024)</li>
+   </ul>
 
   <h2><span class=emoji>&#x1F4DA;</span> Journal publications, theses &amp; preprints</h2>
 
@@ -121,23 +136,8 @@
       </span>
       <br><span class=where-pub>Submitted.</span>
     </li>
-    <li>
-      <a href='https://arxiv.org/abs/2410.13290'>Packing large balanced trees into bipartite graphs</a><br>
-      <span class=author-pub>
-        <a href="https://www.ime.usp.br/~cris/">C.G. Fernandes</a>,
-        T.&nbsp;Naia,
-        <a href="http://www.ime.usp.br/~gsantos">G. Santos</a>,
-        <a href="http://www.dim.uchile.cl/~mstein/">M. Stein</a>. 
-      </span>
-      <br><span class=where-pub>Discrete Mathematics, to appear.</span>
-    </li>
-    <li>
-      <a href='https://arxiv.org/abs/2407.02102'>Separating the edges of a graph by cycles and by subdivisions of K<sub>4</sub></a><br>
-      <span class=author-pub>
-        <a href='https://www.cos.ufrj.br/~fbotler/'>F. Botler</a>,
-        T.&nbsp;Naia.
-      </span>
-      <br><span class=where-pub>Journal of Graph Theory, to appear.</span></li>
+
+
 
     <li>
       <a href='https://arxiv.org/abs/2012.09201'>Trees and tree-like structures in dense digraphs</a><br>
@@ -147,6 +147,45 @@
       </span>
       <br><span class=where-pub>Combinatorics, Probability and Computing, to appear.</span></li>
 
+    <!-- <li> -->
+    <!--   <a href="https://www.advancesincombinatorics.com/article/88916-separating-the-edges-of-a-graph-by-a-linear-number-of-paths"> -->
+    <!--   <\!--<a href='https://arxiv.org/abs/2301.08707'>-\->Separating the edges of a graph by a linear number of paths</a><br> -->
+    <!--   <span class=author-pub> -->
+    <!--     <a href='https://www.labri.fr/perso/mbonamy/'>M. Bonamy</a>, -->
+    <!--     <a href='https://www.cos.ufrj.br/~fbotler/'>F. Botler</a>, -->
+    <!--     <a href='https://sites.google.com/view/francoisdross/'>F. Dross</a>, -->
+    <!--     T.&nbsp;Naia, -->
+    <!--     <a href='http://www.maths.lse.ac.uk/personal/jozef/'>J. Skokan</a>. -->
+    <!--   </span> -->
+    <!--   <br><span class=where-pub>Advances in Combinatorics, October 2023.</span></li> -->
+
+    <!-- <li> -->
+    <!--   <a href='https://arxiv.org/abs/2012.09201'>Trees and tree-like structures in dense digraphs</a><br> -->
+    <!--   <span class=author-pub> -->
+    <!--     <a href="http://web.mat.bham.ac.uk/~mycroftr/">R. Mycroft</a>, -->
+    <!--     T.&nbsp;Naia. -->
+    <!--   </span> -->
+    <!--   <br><span class=where-pub>To appear in Combinatorics, Probability and Computing.</span></li> -->
+
+    <li>
+      <a href='https://arxiv.org/abs/2410.13290'>Packing large balanced trees into bipartite graphs</a><br>
+      <span class=author-pub>
+        <a href="https://www.ime.usp.br/~cris/">C.G. Fernandes</a>,
+        T.&nbsp;Naia,
+        <a href="https://www.cmm.uchile.cl/~gsantos/">G. Santos</a>,
+        <a href="http://www.dim.uchile.cl/~mstein/">M. Stein</a>.
+      </span>
+      <br><span class=where-pub>Discrete Mathematics 348 (12), 114641. [<a href='https://doi.org/10.1016/j.disc.2025.114641'>doi:10.1016/j.disc.2025.114641</a>]</span>
+    </li>
+
+    <li>
+      <a href='https://arxiv.org/abs/2407.02102'>Separating the edges of a graph by cycles and by subdivisions of K<sub>4</sub></a><br>
+      <span class=author-pub>
+        <a href='https://www.cos.ufrj.br/~fbotler/'>F. Botler</a>,
+        T.&nbsp;Naia.
+      </span>
+      <br><span class=where-pub>Journal of Graph Theory, 110: 41&ndash;47. [<a href='https://doi.org/10.1002/jgt.23248'>doi:10.1002/jgt.23248</a>]</span>
+    </li>
 
     <li>
       <a href='https://arxiv.org/abs/2211.07033'>Directed graphs with lower orientation Ramsey thresholds</a><br>
@@ -170,16 +209,16 @@
         T.&nbsp;Naia,
         <a href='http://www.maths.lse.ac.uk/personal/jozef/'>J. Skokan</a>.
       </span>
-      <br><span class=where-pub>Advances in Combinatorics, October 2023 [<a href='https://doi.org/10.19086/aic.2023.6'>DOI:10.19086/aic.2023.6</a>].</span></li>
+      <br><span class=where-pub>Advances in Combinatorics, October 2023, [<a href='https://doi.org/10.19086/aic.2023.6'>DOI:10.19086/aic.2023.6</a>].</span></li>
 
     <li>
-      <a href='https://doi.org/10.1016/j.disc.2023.113583'>Seymour's Second Neighborhood Conjecture for orientations of (pseudo)random graphs</a><br>
-      <span class=author-pub><!-- https://arxiv.org/abs/2211.06540 -->
+      <a href='https://arxiv.org/abs/2211.06540'>Seymour's Second Neighborhood Conjecture for orientations of (pseudo)random graphs</a><br>
+      <span class=author-pub>
         <a href='https://www.cos.ufrj.br/~fbotler/'>F. Botler</a>,
         <a href='https://homepages.dcc.ufmg.br/~phablo/'>P.F. Moura</a>,
         T.&nbsp;Naia.
         </span>
-    <br><span class=where-pub>Discrete Mathematics, <b>346</b>(12) (2023), 113583 [<a href='https://doi.org/10.1016/j.disc.2023.113583'>DOI:10.1016/j.disc.2023.113583</a>].</span></li>
+    <br><span class=where-pub>Discrete Mathematics, <b>346</b>(12) (2023), 113583, [<a href='https://doi.org/10.1016/j.disc.2023.113583'>DOI:10.1016/j.disc.2023.113583</a>].</span></li>
 
 
     <li>
@@ -187,17 +226,17 @@
       <span class=author-pub>
         T.&nbsp;Naia.
       </span>
-      <br><span class=where-pub>Electronic Journal of Combinatorics, <b>29-2</b> (2022), P2.26.</span></li>
+      <br><span class=where-pub>Electronic Journal of Combinatorics, <b>29-2</b> (2022), P2.26, [<a href='https://doi.org/10.37236/10487'>DOI:10.37236/10487</a>].</span></li>
 
     <li>
-      <a href='https://epubs.siam.org/doi/10.1137/20M1386463'>Orientation Ramsey thresholds for cycles and cliques</a><br>
+      <a href='https://arxiv.org/abs/2012.08632'>Orientation Ramsey thresholds for cycles and cliques</a><br>
       <span class=author-pub>
         G.F.&nbsp;Barros,
         <a href="https://www.ime.usp.br/~brunopc/">B.P.&nbsp;Cavalar</a>,
         <a href="http://www.ime.usp.br/~yoshi/">Y.&nbsp;Kohayakawa</a>,
         T.&nbsp;Naia.
       </span>
-      <br><span class=where-pub>SIAM Journal on&nbsp;Discrete Mathematics, <b>35</b>(4) (2021) 2844&ndash;2857.</span></li>
+      <br><span class=where-pub>SIAM Journal on&nbsp;Discrete Mathematics, <b>35</b>(4) (2021) 2844&ndash;2857, [<a href='https://epubs.siam.org/doi/10.1137/20M1386463'>DOI:10.1137/20M1386463</a>].</span></li>
 
 
     <li>
@@ -205,7 +244,7 @@
      <span class=author-pub><a href="http://web.mat.bham.ac.uk/~mycroftr/">R.&nbsp;Mycroft</a>,
      T.&nbsp;Naia.<br></span>
      <span class=where-pub>Random Structures &amp; Algorithms,
-       <b>53</b> (2018) 352&ndash;385.</span></li>
+       <b>53</b> (2018) 352&ndash;385 [<a href=' https://doi.org/10.1002/rsa.20765'>DOI:10.1002/rsa.20765</a>].</span></li>
   </ul>
 
 
@@ -221,13 +260,13 @@
     <br><span class=where-pub>MSc thesis, Universidade de S&atilde;o Paulo, S&atilde;o Paulo, Brazil, 2013.</span></li>
   </ul>
 
-  <h2>Extended abstracts</h2>
+  <h2><span class=emoji>&#x1F4DC;</span> Extended abstracts</h2>
 
 
 
   <ul class=articles>
     <li>
-      <a href='https://doi.org/10.5753/etc.2023.230768'>Cobertura de grafos aleat&oacute;rios por caminhos multicoloridos</a>
+      <!--<a href=''>-->Cobertura de grafos aleat&oacute;rios por caminhos multicoloridos<!--</a>--><br>
       <span class=author-pub>
         <a href='https://www.ime.usp.br/~antoniokaique/'>A. Kaique</a>,
         <a href="http://www.ime.usp.br/~mota/">G.O.&nbsp;Mota</a>,
@@ -249,7 +288,7 @@
 
 
     <li>
-      <a href='https://doi.org/10.22429/Euc2022.016'>Seymour’s Second Neighborhood Conjecture in Arbitrary Orientations of a Random Graph</a><br>
+      <a href=''>Seymour’s Second Neighborhood Conjecture in Arbitrary Orientations of a Random Graph</a><br>
       <span class=author-pub>
         <a href='https://www.cos.ufrj.br/~fbotler/'>F. Botler</a>,
         <a href='https://homepages.dcc.ufmg.br/~phablo/'>P.F. Moura</a>,
@@ -282,65 +321,84 @@
 
   <h2>Coauthors</h2>
 
-  <table style='width:110%'>
+  <table style='width:100%'>
+    <!-- oauthors ------------------------------------------------------------------------------->
+    <!-- current c#pairs: 17, #rows: 6, #columns: 3 -->
     <tr><!-- row #0 -->
-        <td><a href="">Barros, Gabriel Ferreira</a></td>
-        <td><a href="https://web.ifi.uni-heidelberg.de/tcs/garbe">Garbe, Frederik</a></td>
-        <td><a href="https://www.ime.usp.br/~brunopc/">Pasqualotto Cavalar, Bruno </a></td>
+      <td><a href="">Barros, Gabriel Ferreira</a></td>
+      <td><a href="https://web.ifi.uni-heidelberg.de/tcs/garbe">Garbe, Frederik</a></td>
+      <td><a href="https://www.ime.usp.br/~brunopc/">Pasqualotto Cavalar, Bruno </a></td>
     </tr>
     <tr><!-- row #1 -->
-        <td><a href="https://www.labri.fr/perso/mbonamy/">Bonamy, Marthe</a></td>
-        <td><a href="https://www.ime.usp.br/~antoniokaique/">Kaique, Ant&ocirc;nio</a></td>
-        <td><a href="https://www.cmm.uchile.cl/~gsantos/">Santos, Giovanne M.</a></td>
+      <td><a href="https://www.labri.fr/perso/mbonamy/">Bonamy, Marthe</a></td>
+      <td><a href="https://www.ime.usp.br/~antoniokaique/">Kaique, Ant&ocirc;nio</a></td>
+      <td><a href="https://www.cmm.uchile.cl/~gsantos/">Santos, Giovanne M.</a></td>
     </tr>
     <tr><!-- row #2 -->
-        <td><a href="https://www.cos.ufrj.br/~fbotler/">Botler, F&aacute;bio</a></td>
-        <td><a href="http://www.ime.usp.br/~yoshi/">Kohayakawa, Yoshiharu</a></td>
-        <td><a href="http://www.maths.lse.ac.uk/personal/jozef/">Skokan, Jozef</a></td>
+      <td><a href="https://www.cos.ufrj.br/~fbotler/">Botler, F&aacute;bio</a></td>
+      <td><a href="http://www.ime.usp.br/~yoshi/">Kohayakawa, Yoshiharu</a></td>
+      <td><a href="http://www.maths.lse.ac.uk/personal/jozef/">Skokan, Jozef</a></td>
     </tr>
     <tr><!-- row #3 -->
-        <td><a href="https://sites.google.com/view/francoisdross/">Dross, Fran&ccedil;ois</a></td>
-        <td><a href="http://www.ime.usp.br/~mota/">Mota, Guilherme Oliveira</a></td>
-        <td><a href="https://web.ifi.uni-heidelberg.de/tcs/smith">Smith, Zak</a></td>
+      <td><a href="https://sites.google.com/view/francoisdross/">Dross, Fran&ccedil;ois</a></td>
+      <td><a href="http://www.ime.usp.br/~mota/">Mota, Guilherme Oliveira</a></td>
+      <td><a href="https://web.ifi.uni-heidelberg.de/tcs/smith">Smith, Zak</a></td>
     </tr>
     <tr><!-- row #4 -->
-        <td><a href="https://sites.google.com/view/alberto-espuny-diaz/home">Espuny Díaz, Alberto</a></td>
-        <td><a href="https://homepages.dcc.ufmg.br/~phablo/">Moura, Phablo F.S.</a></td>
-        <td><a href="http://www.dim.uchile.cl/~mstein/">Stein, Maya</a></td>
+      <td><a href="https://sites.google.com/view/alberto-espuny-diaz/home">Espuny Díaz, Alberto</a></td>
+      <td><a href="https://homepages.dcc.ufmg.br/~phablo/">Moura, Phablo F.S.</a></td>
+      <td><a href="http://www.dim.uchile.cl/~mstein/">Stein, Maya</a></td>
     </tr>
     <tr><!-- row #5 -->
-        <td><a href="https://www.ime.usp.br/~cris/ G.">Fernandes, Cristina</a></td>
-        <td><a href="http://web.mat.bham.ac.uk/~mycroftr/">Mycroft, Richard</a></td>
+      <td><a href="https://www.ime.usp.br/~cris/ G.">Fernandes, Cristina</a></td>
+      <td><a href="http://web.mat.bham.ac.uk/~mycroftr/">Mycroft, Richard</a></td>
     </tr>
-    
+
   </table>
 
   <h2>Soon-to-be coauthors (works in preparation)</h2>
+
+
+
+
   <!-- Next:-->
-  <table style='width:110%'>
+  <table style='width:100%'>
+
+    <!-- next coauthors ---------------------------------------------------------------------------------->
+    <!-- #pairs: 14, #rows: 5, #columns: 3 -->
     <tr><!-- row #0 -->
-        <td><a href="https://www.doctmat.dmcc.usach.cl/profesores-del-programa/hiep-han/">Hàn, Hiệp</a></td>
-        <td><a href="https://sites.google.com/site/patrickmorriscombinatorics">Morris, Patrick</a></td>
-        <td><a href="https://www.cmm.uchile.cl/~ltrujillo/">Trujillo, Anna L.</a></td>
+      <td><a href="https://antoniuk.web.amu.edu.pl">Antoniuk, Sylwia</a></td>
+      <td><a href="http://lyubenlichev.rf.gd/">Lichev, Lyuben</a></td>
+      <td><a href="https://sites.google.com/view/mpsigne/home, Matías">Pavez-Signé</a></td>
     </tr>
     <tr><!-- row #1 -->
-        <td><a href="http://lyubenlichev.rf.gd/">Lichev, Lyuben</a></td>
-        <td><a href="https://sites.google.com/view/mpsigne/home, Matías">Pavez-Signé</a></td>
-        <td><a href="">Ortega, Miquel</a></td>
+      <td><a href="https://www.ime.usp.br/~lcolucci/">Colucci, Lucas</a></td>
+      <td><a href="">Mendonça, Walner</a></td>
+      <td><a href="https://web.mat.upc.edu/guillem.perarnau/">Perarnau, Guillem</a></td>
     </tr>
     <tr><!-- row #2 -->
-        <td><a href="">Mendonça, Walner</a></td>
-        <td><a href="https://web.mat.upc.edu/guillem.perarnau/">Perarnau, Guillem</a></td>
+      <td><a href="https://www.doctmat.dmcc.usach.cl/profesores-del-programa/hiep-han/">Hàn, Hiệp</a></td>
+      <td><a href="https://umdi-juriquilla.fciencias.unam.mx/somos/fichas/profs/DraAmandaMontejano.html">Montejano, Amanda</a></td>
+      <td><a href="https://web.mat.upc.edu/oriol.serra/">Serra, Oriol</a></td>
+    </tr>
+    <tr><!-- row #3 -->
+      <td><a href="https://sites.google.com/view/jaehoon-kim/home">Kim, Jaehoon (김재훈)</a></td>
+      <td><a href="https://sites.google.com/site/patrickmorriscombinatorics">Morris, Patrick</a></td>
+      <td><a href="https://www.cmm.uchile.cl/~ltrujillo/">Trujillo, Anna L.</a></td>
+    </tr>
+    <tr><!-- row #4 -->
+      <td><a href="https://albertolarrauri.github.io">Larrauri, Alberto</a></td>
+      <td><a href="https://www.miquelortega.net">Ortega, Miquel</a></td>
     </tr>
 
   </table>
-   <!-- -->
+  <!-- -->
 
   <h2>Research visits</h2>
 
   <ul>
     <li>Richard Mycroft
-      <span class=where-talk>(University of Birmingham, United Kingdom)</span>,
+      <span class=where-talk>(University of Birmingham, UK)</span>,
     </li>
     <li>
       Guillem Perarnau
@@ -351,10 +409,7 @@
       <span class=where-talk>(Universidade Federal do Rio Grande do Sul, Brazil)</span>,
     </li>
     <li>
-      F&aacute;bio Botler <span class=where-talk>(Universidade Federal do Rio de Janeiro, Brazil)</span>,
-    </li>
-    <li>
-      Alberto Espuny D&iacute;az <span class=where-talk>(Universit&auml;t Heidelberg, Germany)</span>.
+      F&aacute;bio Botler <span class=where-talk>(Universidade Federal do Rio de Janeiro, Brazil)</span>.
     </li>
     </ul>
 
@@ -363,13 +418,22 @@
 
   <ul>
     <li>
+      <a href='https://www.dmg.tuwien.ac.at/rsa2025/'>Random Structures &amp; Algorithms</a>
+      <!-- Contributed talk -->
+      <span class=where-talk>TU Wien, Vienna, Austria4&ndash;8 Aug 2025</span>
+    </li>
+    <li>
+      <a href='https://gapcomb.upc.edu/en/seminar-en/gapcomb-workshop/6th-gapcomb-workshop'>6th GAPCOMB workshop</a>
+      <span class=where-talk>Monestir de Santa Maria de Poblet, Catalunya, 16&ndash;19 Jun 2025</span>
+    </li>
+    <li>
       <a href='https://jovenes2025.rsme.es/'>VII Congreso de Jóvenes Investigadores de la RSME</a>
       <!-- Invited talk in minisymposium
            Parallell session OT01:
            Computational Geometry and Graph Theory
            Geometría Computacional y Teoría de Grafos
         -->
-      <span class=where-talk>13&ndash;17 Jan 2025</span>
+      <span class=where-talk>Bilbao, Spain, 13&ndash;17 Jan 2025</span>
     </li>
     <li>
       <a href='https://www.crm.cat/exploratory-workshop-interplays-between-algebra-combinatorics-and-proof-formalization/'>Interplays between Algebra, Combinatorics and proof formalization</a>
@@ -384,14 +448,10 @@
       <!-- 5th Workshop on Geometric, Algebraic and Probabilistic Combinatorics -->
       <span class=where-talk>Montserrat, Catalunya, Spain, 9&ndash;12 Jul 2024.</span></li>
     <li>
-      <a href='https://mathplus.de/events/bms-bgsmath-meeting/'>Barcelona Graduate School of Math / Berlin Mathematical School Junior Meeting</a>
+      <a href='https://mathplus.de/events/bms-bgsmath-meeting/'>Barcelona Graduate School of Math / Berlin Mathematical School Junior Meeting</a><!-- short account https://www.crm.cat/4th-bms-bgsmath-junior-meeting-2024-fostering-connections-between-young-researchers/ --><!-- BMS--BGSMath Junior Meeting -->
       <span class=where-talk>Berlin, Germany, 26&ndash;28 June, 2024.</span></li>
-    <li>
-      Combinatorics Workshop<!-- workshop organised by Bartek -->
-      <span class=where-talk>Laskowa, Poland,  18&ndash;26 May, 2024.</span></li>
-    <li>
-      <a href='https://web.ifi.uni-heidelberg.de/tcs/seminar'>Combinatorics Seminar</a>
-      <span class=where-talk>Heidelberg, Germany, 29 February, 2024.</span></li>
+    <li>Laskowa Worshop</li>
+
     <li>
       <a href='https://www.crm.cat/discrete-probability-days/'>Discrete Probability Days</a>
       <!-- workshop organised by Dieter Mitsche -->
@@ -401,6 +461,7 @@
       <a href='https://www.crm.cat/mini-course-on-different-random-geometric-graph-models/'>Minicourse on Geometric Random Graph Models</a>
       <!-- workshop organised by Dieter Mitsche -->
       <span class=where-talk>CRM, Bellaterra, Spain, 10&ndash;11 Oct, 2023.</span></li>
+    <li>
     <li>
       <a href='https://gapcomb.upc.edu/en/seminar-en/4th-gapcomb-workshop'>4th GAPCOMB</a>
       <!-- 4th Workshop on Geometric, Algebraic and Probabilistic Combinatorics -->
@@ -508,42 +569,18 @@
     <span class=where-talk>IME-USP, Brazil, 3&ndash;5 Nov 2008.</span></li>
   </ul>
 
-  <h2>Teaching</h2>
-
-  <ul>
-    <li><a href='https://www.crm.cat/bgsmath-threshold-phenomena-in-random-structures/'>Threshold Phenomena in Random Structures (BGSMath Graduate Course)</a> <span class=where-talk>Belaterra, Spain, 9&ndash;20 Dec 2024.</span></li>
-
-    <li>Year 1 support class, <span class=where-talk>Birmingham, UK, Autumn 2017.</span></li>
-    <li>Algebra and Combinatorics, <span class=where-talk>Birmingham, UK, Autumn 2017.</span></li>
-
-    <li>Year 1 support class, <span class=where-talk>Birmingham, UK, Spring 2016.</span></li>
-    <li>Support class and computer lab demonstrating, <span class=where-talk>Birmingham, UK, Spring 2016.</span></li>
-
-    <li>Foundation Year in Mathematics, <span class=where-talk>Birmingham, UK, Autumn 2015.</span></li>
-    <li>Real and Complex Analysis, <span class=where-talk>Birmingham, UK, Autumn 2015.</span></li>
-
-    <li>Real and Complex Analysis, <span class=where-talk>Birmingham, UK, Spring 2015.</span></li>
-    <li>Year 1 support class, <span class=where-talk>Birmingham, UK, Spring 2015.</span></li>
-
-    <li>Algebra and Combinatorics, <span class=where-talk>Birmingham, UK, Autumn 2014.</span></li>
-    <li>Multivariate analysis, <span class=where-talk>Birmingham, UK, Autumn 2014.</span></li>
-  
-    <li>Probability and Combinatorics, <span class=where-talk>São Paulo, Brazil,  2013.</span>
-</ul>
-  
   <h2>Service</h2>
 
     <p>Here is a handy reference for  <a href="https://arxiv.org/help/prep#accents">(La)TeX accents.</a></p>
-
 
     <p>
       <script src="https://climateclock.world/widget-v1.js" async></script>
       <climate-clock></climate-clock>
     </p>
 
-  <hr>
+
   <p>
-  <a href="https://u.fsf.org/friendsfall19"><img style='width:14em' src="https://static.fsf.org/nosvn/images/badges/appeal2019/child.png" alt="Don't let DRM freeze you out!"></a><a href="http://u.fsf.org/16e"><img style='width:14em' src="https://static.fsf.org/nosvn/images/badges/fsfs_icons_beige-bg.png" alt="Free Software, Free Society"></a><a href="https://u.fsf.org/friendsfall19"><img style='width:14em' src="https://static.fsf.org/nosvn/images/badges/appeal2019/sugar.png" alt="Do you know what's in your software?."></a>
+  <a href="https://u.fsf.org/friendsfall19"><img style='width:8rem' src="https://static.fsf.org/nosvn/images/badges/appeal2019/child.png" alt="Don't let DRM freeze you out!"></a><a href="http://u.fsf.org/16e"><img style='width:8rem' src="https://static.fsf.org/nosvn/images/badges/fsfs_icons_beige-bg.png" alt="Free Software, Free Society"></a><a href="https://u.fsf.org/friendsfall19"><img style='width:8rem' src="https://static.fsf.org/nosvn/images/badges/appeal2019/sugar.png" alt="Do you know what's in your software?."></a>
   </p>
 
   <ul>
@@ -557,10 +594,10 @@
     <a href='files/tassio.jpg'>T&aacute;ssio Naia</a> <a href='mailto:tnaia@member.fsf.org'>&lt;tnaia&commat;member.fsf.org&gt;</a>
    </address>
 
-   <p class=time>Last modified on Wed 30 Jul 2025 09:10:29 am (UTC);<br>
+   <p class=time>Last modified on Wed 30 Jul 2025 10:16:29 am (UTC);<br>
     valid html5 according to
     the <a href="http://validator.w3.org/check?uri=https://tnaia.github.io/index.html">nu validator</a>.</p>
-</footer></body></html>
+</footer></div></body></html>
 
 <!-- Local Variables: -->
 <!-- time-stamp-pattern: "-13/[ ]+..............Last modified on %3a %:d %3b %:y %02I:%02M:%02S %#p (%Z);<br>" -->
